@@ -11,18 +11,17 @@
         }
 
         table {border-collapse: collapse;
-            border: 1px solid rgba(133, 133, 133, 0.226);
-        
-
+            border: 1px solid rgba(133, 133, 133, 0.226)
             }
+
         thead {
             background-color: rgb(48, 71, 206);
             color: aliceblue;
         }
 
         th, td {
-            width: 245px;
-            height: 70px;
+            padding: 20px;
+            height: 60px;
              border: 1px solid rgba(211, 211, 211, 0.568);
             
         }
@@ -31,12 +30,26 @@
             text-align: center;
         }
 
+        .id {
+            width: 60px;
+            text-align: center;
+        }
+
+        .produto {
+            width: 230px;
+        }
+
+        .categoria, .preço, .estoque {
+            width: 100px;
+        }
+
         tr.destaque {
             background-color: rgba(224, 224, 224, 0.199);
         }
 
         tfoot {
             background-color: rgba(80, 233, 233, 0.13);
+            font-weight: bold;
         }
 
 
@@ -48,57 +61,58 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Produto</th>
-                <th>Categoria</th>
-                <th>Preço (R$)</th>
-                <th>Estoque</th>
+                <th class="id">ID</th>
+                <th class="produto">Produto</th>
+                <th class="categoria">Categoria</th>
+                <th class="preço">Preço (R$)</th>
+                <th class="estoque">Estoque</th>
             </tr>
          </thead>
          <tbody>
             <tr>
-                <td class="centro">1</td>
-                <td>Smartphone Samsung Galaxy A54</td>
-                <td>Celulares</td>
-                <td>1.899,00</td>
-                <td>15</td>
+                <td class="id">1</td>
+                <td class="produto">Smartphone Samsung Galaxy A54</td>
+                <td class="categoria">Celulares</td>
+                <td class="preço">1.899,00</td>
+                <td class="estoque">15</td>
             </tr>
             <tr class="destaque">
-                <td class="centro">2</td>
-                <td>Notebook Dell Inspiron</td>
-                <td>Informática</td>
-                <td>3.299,00</td>
-                <td>28</td>
+                <td class="id">2</td>
+                <td class="produto">Notebook Dell Inspiron</td>
+                <td class="categoria">Informática</td>
+                <td class="preço">3.299,00</td>
+                <td class="estoque">28</td>
             </tr>
             <tr>
-                <td class="centro">3</td>
-                <td>Fonde JBL 510TB</td>
-                <td>Áudio</td>
-                <td>219,99</td>
-                <td>50</td>
+                <td class="id">3</td>
+                <td class="produto">Fone JBL 510TB</td>
+                <td class="categoria">Áudio</td>
+                <td class="preço">219,99</td>
+                <td class="estoque">50</td>
             </tr>
             <tr class="destaque">
-                <td class="centro">4</td>
-                <td>Monitor LG 24" Full HD</td>
-                <td>Informática</td>
-                <td>699,00</td>
-                <td>12</td>
+                <td class="id">4</td>
+                <td class="produto">Monitor LG 24" Full HD</td>
+                <td class="categoria">Informática</td>
+                <td class="preço">699,00</td>
+                <td class="estoque">12</td>
             </tr>
             <tr>
-                <td class="centro">5</td>
-                <td>Teclado Redragon</td>
-                <td>Periféricos</td>
-                <td>299,99</td>
-                <td>30</td>
+                <td class="id">5</td>
+                <td class="produto">Teclado Redragon</td>
+                <td class="categoria">Periféricos</td>
+                <td class="preço">299,99</td>
+                <td class="estoque">30</td>
             </tr>
         </tbody>
          <tfoot>
             <tr>
-                <td class="centro">Total</td>
-                <td class="centro">-</td>
-                <td class="centro">-</td>
-                <td>6.416,80</td>
-                <td>135</td>
+                    <td class="id">Total</td>
+                    <td class="centro">-</td>
+                    <td class="centro">-</td>
+                    <td class="preço">6.416,80</td>
+                    <td class="estoque">135</td>
+        
             </tr>
 
          </tfoot>

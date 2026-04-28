@@ -11,22 +11,34 @@
         }
 
         table {border-collapse: collapse;
+            border: 1px solid rgba(133, 133, 133, 0.226);
         
 
             }
         thead {
             background-color: rgb(48, 71, 206);
+            color: aliceblue;
         }
 
         th, td {
-            width: 200px;
-            height: 50px;
+            width: 245px;
+            height: 70px;
+             border: 1px solid rgba(211, 211, 211, 0.568);
             
         }
 
         td.centro {
             text-align: center;
         }
+
+        tr.destaque {
+            background-color: rgba(224, 224, 224, 0.199);
+        }
+
+        tfoot {
+            background-color: rgba(80, 233, 233, 0.13);
+        }
+
 
 
     </style>
@@ -39,7 +51,7 @@
                 <th>ID</th>
                 <th>Produto</th>
                 <th>Categoria</th>
-                <th>Preço</th>
+                <th>Preço (R$)</th>
                 <th>Estoque</th>
             </tr>
          </thead>
@@ -51,7 +63,7 @@
                 <td>1.899,00</td>
                 <td>15</td>
             </tr>
-            <tr>
+            <tr class="destaque">
                 <td class="centro">2</td>
                 <td>Notebook Dell Inspiron</td>
                 <td>Informática</td>
@@ -65,7 +77,7 @@
                 <td>219,99</td>
                 <td>50</td>
             </tr>
-            <tr>
+            <tr class="destaque">
                 <td class="centro">4</td>
                 <td>Monitor LG 24" Full HD</td>
                 <td>Informática</td>
@@ -83,8 +95,8 @@
          <tfoot>
             <tr>
                 <td class="centro">Total</td>
-                <td>-</td>
-                <td>-</td>
+                <td class="centro">-</td>
+                <td class="centro">-</td>
                 <td>6.416,80</td>
                 <td>135</td>
             </tr>
